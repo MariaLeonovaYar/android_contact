@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="6dp"
+    app:cardElevation="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/fruit_photo"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            app:placeholderImage="@drawable/image_placeholder" />
+
+        <TextView
+            android:id="@+id/fruit_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_toRightOf="@id/fruit_photo"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp"
+            tools:text="Яблоко" />
+
+        <TextView
+            android:id="@+id/fruit_quantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fruit_name"
+            android:layout_alignStart="@id/fruit_name"
+            android:textColor="#727272"
+            android:textSize="12sp"
+            tools:text="160 шт." />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

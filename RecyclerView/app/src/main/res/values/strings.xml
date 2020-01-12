@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Склад</string>
+    <string name="add_btn_text">Добавить</string>
+    <string name="remove_btn_text">Удалить</string>
+    <string name="reset_btn_text">Обновить</string>
+
+    <string name="fruit_quantity_template">%d шт.</string>
+</resources>
